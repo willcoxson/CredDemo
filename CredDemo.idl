@@ -1,0 +1,27 @@
+// CredDemo.idl : IDL source for CredDemo
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CredDemo.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "credentialprovider.idl";
+
+[
+	uuid(63cdb236-69ed-41e2-923f-427ea6f42adb),
+	version(1.0),
+]
+library CredDemoLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(d8ed9db5-2623-40e2-bfac-f06df0a67665)
+	]
+	coclass Provider
+	{
+		[default] interface ICredentialProvider;
+	};
+};
+
+import "shobjidl.idl";
