@@ -9,11 +9,6 @@
 #include "extras.h"
 #include <LM.h>
 
-
-// __FILE__ "  "   L" : " __LINE__
-
-
-
 using namespace std;
 
 CProvider::CProvider()
